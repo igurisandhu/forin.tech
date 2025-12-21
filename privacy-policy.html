@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Forin Tech</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                    sans: ['Inter', 'system-ui', 'sans-serif'],
+                },
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        },
+                        dark: {
+                            50: '#f8fafc',
+                            100: '#f1f5f9',
+                            200: '#e2e8f0',
+                            300: '#cbd5e1',
+                            400: '#94a3b8',
+                            500: '#64748b',
+                            600: '#475569',
+                            700: '#334155',
+                            800: '#1e293b',
+                            900: '#0f172a',
+                            950: '#020617',
+                        }
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.5s ease-in-out',
+                        'slide-up': 'slideUp 0.5s ease-out',
+                        'float': 'float 3s ease-in-out infinite',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'gradient': 'gradient 3s ease infinite',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(20px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        gradient: {
+                            '0%, 100%': {
+                                'background-size': '200% 200%',
+                                'background-position': 'left center'
+                            },
+                            '50%': {
+                                'background-size': '200% 200%',
+                                'background-position': 'right center'
+                            }
+                        }
+                    },
+                    backgroundImage: {
+                        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                        'grid-pattern': 'linear-gradient(to right, #1e293b 1px, transparent 1px), linear-gradient(to bottom, #1e293b 1px, transparent 1px)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #475569;
+        }
+        
+        /* Selection color */
+        ::selection {
+            background-color: rgba(14, 165, 233, 0.3);
+            color: #f8fafc;
+        }
+        
+        /* Smooth transitions */
+        * {
+            transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        
+        /* Grid background pattern */
+        .grid-bg {
+            background-size: 50px 50px;
+            background-image: 
+                linear-gradient(to right, rgba(30, 41, 59, 0.5) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(30, 41, 59, 0.5) 1px, transparent 1px);
+        }
+        
+        /* Custom card gradient */
+        .card-gradient {
+            background: linear-gradient(135deg, rgba(30, 41, 59, 0.8) 0%, rgba(15, 23, 42, 0.9) 100%);
+        }
+    </style>
+</head>
+<body class="bg-dark-950 text-gray-300 font-sans">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-dark-900/80 backdrop-blur-lg border-b border-dark-700">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-gradient-to-br from-primary-500 to-primary-700 rounded-xl flex items-center justify-center shadow-lg">
+                        <img src="https://forin.tech/assets/logo.jpeg" alt="Forin Tech Logo" class="w-10 h-10 object-contain">
+                    </div>
+                    <div>
+                        <span class="text-lg font-bold text-white">Forin<span class="text-primary-400">Tech</span></span>
+                        <div class="text-xs text-primary-300 font-medium">Smart Tech Innovations</div>
+                    </div>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex items-center space-x-6">
+                    <a href="/" class="text-white font-medium hover:text-primary-300 transition-all duration-300 group relative">
+                        Home
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-400 group-hover:w-full transition-all duration-300"></span>
+                    </a>
+                    <a href="/products.html" class="text-gray-400 hover:text-primary-300 transition-all duration-300 group relative">
+                        Products
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-400 group-hover:w-full transition-all duration-300"></span>
+                    </a>
+                    <a href="/services.html" class="text-gray-400 hover:text-primary-300 transition-all duration-300 group relative">
+                        Services
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-400 group-hover:w-full transition-all duration-300"></span>
+                    </a>
+                    <a href="/about.html" class="text-gray-400 hover:text-primary-300 transition-all duration-300 group relative">
+                        About
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-400 group-hover:w-full transition-all duration-300"></span>
+                    </a>
+                    <a href="/contact.html" class="bg-gradient-to-r from-primary-600 to-primary-800 text-white px-6 py-3 rounded-xl font-medium hover:shadow-xl hover:shadow-primary-900/30 transition-all duration-300 hover:-translate-y-0.5">Contact Us</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="lg:hidden text-gray-400 focus:outline-none hover:text-primary-300 transition">
+                    <i class="fas fa-bars text-lg"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden lg:hidden mt-6 pb-4">
+                <div class="flex flex-col space-y-2">
+                    <a href="/" class="text-white font-medium hover:text-primary-300 transition">Home</a>
+                    <a href="/products.html" class="text-gray-400 hover:text-primary-300 transition">Products</a>
+                    <!-- <a href="/projects.html" class="text-gray-400 hover:text-primary-300 transition">Projects</a> -->
+                    <a href="/services.html" class="text-gray-400 hover:text-primary-300 transition">Services</a>
+                    <a href="/about.html" class="text-gray-400 hover:text-primary-300 transition">About</a>
+                    <a href="/contact.html" class="bg-gradient-to-r from-primary-600 to-primary-800 text-white px-6 py-3 rounded-xl font-medium text-center hover:shadow-lg transition">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-24">
+        <section class="py-16">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <h1 class="text-5xl font-bold text-white mb-4">Privacy Policy</h1>
+                <p class="text-gray-400 mb-7">Last updated: December 2024</p>
+
+                <div class="space-y-12">
+                    <section>
+                        <h2 class="text-2xl font-bold text-white mb-4">1. Introduction</h2>
+                        <p class="text-gray-400 leading-relaxed mb-4">
+                            Forin Tech ("we", "us", "our", or "Company") operates the website. This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our website and the choices you have associated with that data.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2 class="text-2xl font-bold text-white mb-4">2. Information Collection and Use</h2>
+                        <p class="text-gray-400 leading-relaxed mb-4 font-semibold">We collect several different types of information:</p>
+                        
+                        <div class="space-y-2 ml-4">
+                            <div>
+                                <h3 class="text-white font-semibold mb-2">Personal Data:</h3>
+                                <p class="text-gray-400">While using our website, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you ("Personal Data"). This may include, but is not limited to:
+                                </p>
+                                <ul class="list-disc list-inside text-gray-400 space-y-1 ml-4 mt-2">
+                                    <li>Email address</li>
+                                    <li>First name and last name</li>
+                                    <li>Phone number</li>
+                                    <li>Address, State, Province, ZIP/Postal code, City</li>
+                                    <li>Cookies and Usage Data</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2 class="text-2xl font-bold text-white mb-4">3. Use of Data</h2>
+                        <p class="text-gray-400 leading-relaxed mb-4">Forin Tech uses the collected data for various purposes:</p>
+                        <ul class="list-disc list-inside text-gray-400 space-y-2 ml-4">
+                            <li>To provide and maintain our website</li>
+                            <li>To notify you about changes to our website</li>
+                            <li>To allow you to participate in interactive features of our website</li>
+                            <li>To provide customer care and support</li>
+                            <li>To gather analysis or valuable information so that we can improve our website</li>
+                            <li>To monitor the usage of our website</li>
+                            <li>To detect, prevent and address technical issues</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2 class="text-2xl font-bold text-white mb-4">4. Security of Data</h2>
+                        <p class="text-gray-400 leading-relaxed mb-4">
+                            The security of your data is important to us, but remember that no method of transmission over the Internet or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your Personal Data, we cannot guarantee its absolute security.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2 class="text-2xl font-bold text-white mb-4">5. Changes to This Privacy Policy</h2>
+                        <p class="text-gray-400 leading-relaxed mb-4">
+                            We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2 class="text-2xl font-bold text-white mb-4">6. Contact Us</h2>
+                        <p class="text-gray-400 leading-relaxed mb-4">
+                            If you have any questions about this Privacy Policy, please contact us:
+                        </p>
+                        <div class="bg-dark-800/50 border border-dark-700 rounded-lg p-6 mt-4">
+                            <p class="text-gray-300"><strong>Email:</strong> contact@forintech.com</p>
+                            <p class="text-gray-300"><strong>Phone:</strong> +91 9569 602 213</p>
+                            <p class="text-gray-300"><strong>Company:</strong> Forin Tech</p>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2 class="text-2xl font-bold text-white mb-4">7. GDPR Compliance</h2>
+                        <p class="text-gray-400 leading-relaxed mb-4">
+                            For users in the European Union, Forin Tech complies with the General Data Protection Regulation (GDPR). We only process personal data with a lawful basis and provide individuals with rights including access, rectification, erasure, and data portability.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2 class="text-2xl font-bold text-white mb-4">8. Data Retention</h2>
+                        <p class="text-gray-400 leading-relaxed mb-4">
+                            We will retain your Personal Data only for as long as necessary for the purposes set out in this Privacy Policy. We will retain and use your Personal Data to the extent necessary to comply with our legal obligations.
+                        </p>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Include Footer -->
+    <div id="footer"></div>
+    <script>
+        fetch('/includes/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+    </script>
+        <!-- JavaScript for Interactivity -->
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+            
+            // Change icon
+            const icon = this.querySelector('i');
+            if (icon.classList.contains('fa-bars')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                        const menuButton = document.getElementById('mobile-menu-button');
+                        const icon = menuButton.querySelector('i');
+                        icon.classList.remove('fa-times');
+                        icon.classList.add('fa-bars');
+                    }
+                }
+            });
+        });
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('bg-dark-900/95', 'shadow-xl');
+            } else {
+                nav.classList.remove('bg-dark-900/95', 'shadow-xl');
+            }
+        });
+
+        // Initialize navbar background
+        if (window.scrollY > 50) {
+            document.querySelector('nav').classList.add('bg-dark-900/95', 'shadow-xl');
+        }
+
+        // Card hover animations
+        document.querySelectorAll('.group').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-8px)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+</body>
+</html>
