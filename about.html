@@ -164,273 +164,674 @@
     </style>
 </head>
 <body class="bg-dark-950 text-gray-300 font-sans">
-    <!-- Navigation -->
-    <nav class="fixed top-0 w-full z-50 bg-dark-900/80 backdrop-blur-lg border-b border-dark-700">
-        <div class="container mx-auto px-6 py-4">
-            <div class="flex justify-between items-center">
-                <!-- Logo -->
-                <div class="flex items-center space-x-3">
-                    <div class="w-10 h-10 bg-gradient-to-br from-primary-500 to-primary-700 rounded-xl flex items-center justify-center shadow-lg">
-                        <img src="https://forin.tech/assets/forintech_logo.jpeg" alt="Forin Tech Logo" class="w-10 h-10 object-contain">
-                    </div>
-                    <div>
-                        <span class="text-lg font-bold text-white">Forin<span class="text-primary-400">Tech</span></span>
-                        <div class="text-xs text-primary-300 font-medium">Smart Tech Innovations</div>
-                    </div>
-                </div>
+    
+    <!-- Navbar Section  -->
+    <div id="navbar-container"></div>
 
-                <!-- Desktop Menu -->
-                <div class="hidden lg:flex items-center space-x-6">
-                    <a href="/" class="text-white font-medium hover:text-primary-300 transition-all duration-300 group relative">
-                        Home
-                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-400 group-hover:w-full transition-all duration-300"></span>
-                    </a>
-                    <a href="/products.html" class="text-gray-400 hover:text-primary-300 transition-all duration-300 group relative">
-                        Products
-                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-400 group-hover:w-full transition-all duration-300"></span>
-                    </a>
-                    <a href="/services.html" class="text-gray-400 hover:text-primary-300 transition-all duration-300 group relative">
-                        Services
-                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-400 group-hover:w-full transition-all duration-300"></span>
-                    </a>
-                    <a href="/about.html" class="text-gray-400 hover:text-primary-300 transition-all duration-300 group relative">
-                        About
-                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-400 group-hover:w-full transition-all duration-300"></span>
-                    </a>
-                    <a href="/contact.html" class="bg-gradient-to-r from-primary-600 to-primary-800 text-white px-6 py-3 rounded-xl font-medium hover:shadow-xl hover:shadow-primary-900/30 transition-all duration-300 hover:-translate-y-0.5">Contact Us</a>
-                </div>
+   <!-- About Hero -->
+    <section id="about-hero"
+        class="relative min-h-screen flex items-center overflow-hidden">
 
-                <!-- Mobile Menu Button -->
-                <button id="mobile-menu-button" class="lg:hidden text-gray-400 focus:outline-none hover:text-primary-300 transition">
-                    <i class="fas fa-bars text-lg"></i>
-                </button>
-            </div>
+        <!-- Grid Background -->
 
-            <!-- Mobile Menu -->
-            <div id="mobile-menu" class="hidden lg:hidden mt-6 pb-4">
-                <div class="flex flex-col space-y-2">
-                    <a href="/" class="text-white font-medium hover:text-primary-300 transition">Home</a>
-                    <a href="/products.html" class="text-gray-400 hover:text-primary-300 transition">Products</a>
-                    <!-- <a href="/projects.html" class="text-gray-400 hover:text-primary-300 transition">Projects</a> -->
-                    <a href="/services.html" class="text-gray-400 hover:text-primary-300 transition">Services</a>
-                    <a href="/about.html" class="text-gray-400 hover:text-primary-300 transition">About</a>
-                    <a href="/contact.html" class="bg-gradient-to-r from-primary-600 to-primary-800 text-white px-6 py-3 rounded-xl font-medium text-center hover:shadow-lg transition">Contact Us</a>
-                </div>
-            </div>
+        <div class="absolute inset-0 grid-bg opacity-30"></div>
+
+        <!-- Blobs -->
+
+        <div
+            class="hero-blob-1 absolute top-20 left-10 w-96 h-96 bg-primary-600/20 rounded-full blur-[120px]">
         </div>
-    </nav>
 
-    <main class="pt-20">
-        <section class="relative overflow-hidden h-screen max-sm:h-[93vh] flex items-center">
-            <div class="absolute inset-0 grid-bg z-0"></div>
-            <div class="absolute top-1/3 right-1/4 w-64 h-64 bg-gradient-to-br from-primary-900/20 to-transparent rounded-full blur-3xl"></div>
-            <div class="container mx-auto px-6 py-12 relative z-10">
-                <div class="max-w-3xl">
-                    <div class="inline-block px-4 py-2 bg-primary-900/40 rounded-full border border-primary-800/50 mb-4">
-                        <span class="text-primary-300 text-sm font-medium">👋 About Us</span>
-                    </div>
-                    <h1 class="text-3xl md:text-5xl font-bold text-white mb-6">
-                        Building Tech <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-primary-600">Solutions</span> That Matter
-                    </h1>
-                    <p class="text-xl text-gray-400 mb-8 max-w-2xl">We're a team of passionate software engineers dedicated to delivering innovative solutions that solve real business problems and drive growth.</p>
-                    <div class="flex flex-col sm:flex-row gap-6 mb-12">
-                        <a href="#story" class="group bg-gradient-to-r from-primary-600 to-primary-800 text-white px-6 py-3 rounded-lg font-medium hover:shadow-2xl hover:shadow-primary-900/40 transition-all transform hover:-translate-y-1 flex items-center justify-center">
-                            Our Story
-                            <i class="fas fa-arrow-down ml-2 group-hover:translate-y-1 transition-transform"></i>
-                        </a>
-                    </div>
-                    <div class="grid grid-cols-3 gap-6 max-w-2xl">
-                        <div>
-                            <div class="text-3xl font-bold text-primary-400 mb-2">4+</div>
-                            <p class="text-sm text-gray-400">Years Experience</p>
-                        </div>
-                        <div>
-                            <div class="text-3xl font-bold text-primary-400 mb-2">50+</div>
-                            <p class="text-sm text-gray-400">Projects Delivered</p>
-                        </div>
-                        <div>
-                            <div class="text-3xl font-bold text-primary-400 mb-2">30+</div>
-                            <p class="text-sm text-gray-400">Happy Clients</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div
+            class="hero-blob-2 absolute bottom-10 right-10 w-96 h-96 bg-blue-600/20 rounded-full blur-[120px]">
+        </div>
 
-        <section class="py-16">
-            <div class="container mx-auto px-6">
-                <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto items-center mb-20">
-                    <div>
-                        <div class="card-gradient rounded-2xl border border-dark-700 p-12">
-                            <div class="w-32 h-32 bg-gradient-to-br from-primary-500 to-primary-700 rounded-full flex items-center justify-center mx-auto mb-4 shadow-xl shadow-primary-900/30">
-                                <img src="https://linkpre.com/_next/image?url=https%3A%2F%2Fapi.linkpre.com%2Fimages%2Fprofiles%2F692d2435b7afbbd3d862f7ae-1764953273737.jpg&w=256&q=85" alt="Gurjeet Singh" class="w-28 h-28 rounded-full object-cover border-4 border-white">
-                            </div>
-                            <h2 class="text-3xl font-bold text-white text-center mb-2">Gurjeet Singh</h2>
-                            <p class="text-primary-400 font-semibold text-center mb-6">Founder & Lead Software Engineer</p>
-                            <p class="text-gray-400 text-center mb-4">Passionate about innovation and building solutions that make a difference in the business world.</p>
-                            <a href="https://linkpre.com/igurisandhu" target="_blank" class="block w-full bg-primary-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary-700 transition text-center">
-                                View Profile <i class="fas fa-external-link-alt ml-2"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <h2 class="text-4xl font-bold text-white mb-4">Our Story</h2>
-                        <div class="space-y-6">
-                            <div>
-                                <h3 class="text-xl font-bold text-white mb-3">4+ Years of Excellence</h3>
-                                <p class="text-gray-400">With over 4 years of experience as a software engineer, Gurjeet Singh founded Forin Tech to deliver cutting-edge solutions that solve real business problems.</p>
-                            </div>
-                            <div>
-                                <h3 class="text-xl font-bold text-white mb-3">Our Mission</h3>
-                                <p class="text-gray-400">To empower businesses with innovative technology solutions that drive growth, efficiency, and digital transformation.</p>
-                            </div>
-                            <div>
-                                <h3 class="text-xl font-bold text-white mb-3">Our Vision</h3>
-                                <p class="text-gray-400">To become the trusted partner for businesses seeking smart, scalable, and sustainable tech solutions that create lasting impact.</p>
-                            </div>
-                        </div>
-                    </div>
+        <!-- Glow -->
+
+        <div
+            class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.08),transparent_70%)]">
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10">
+
+            <div class="max-w-4xl mx-auto text-center">
+
+                <!-- Badge -->
+
+                <div
+                    class="about-badge inline-flex items-center px-4 py-2 rounded-full border border-primary-500/30 bg-primary-900/20 mb-2">
+
+                    <span class="text-primary-300 text-sm">
+
+                        🏢 About Forin Tech
+
+                    </span>
+
                 </div>
 
-                <div class="grid md:grid-cols-4 gap-6">
-                    <div class="card-gradient rounded-2xl border border-dark-700 p-6 text-center hover:border-primary-600/50 transition">
-                        <div class="text-4xl font-bold text-primary-400 mb-4">4+</div>
-                        <p class="text-gray-400 font-semibold">Years Experience</p>
-                    </div>
-                    <div class="card-gradient rounded-2xl border border-dark-700 p-6 text-center hover:border-primary-600/50 transition">
-                        <div class="text-4xl font-bold text-primary-400 mb-4">50+</div>
-                        <p class="text-gray-400 font-semibold">Projects Completed</p>
-                    </div>
-                    <div class="card-gradient rounded-2xl border border-dark-700 p-6 text-center hover:border-primary-600/50 transition">
-                        <div class="text-4xl font-bold text-primary-400 mb-4">100%</div>
-                        <p class="text-gray-400 font-semibold">Satisfied Clients</p>
-                    </div>
-                    <div class="card-gradient rounded-2xl border border-dark-700 p-6 text-center hover:border-primary-600/50 transition">
-                        <div class="text-4xl font-bold text-primary-400 mb-4">2</div>
-                        <p class="text-gray-400 font-semibold">Active Products</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+                <!-- Title -->
 
-        <section class="py-16 bg-dark-900/50">
-            <div class="container mx-auto px-6">
-                <h2 class="text-4xl font-bold text-white text-center mb-10">Our Values</h2>
-                <div class="grid md:grid-cols-3 gap-6">
-                    <div class="card-gradient rounded-2xl border border-dark-700 p-6 hover:border-primary-600/50 transition group">
-                        <div class="w-16 h-16 bg-primary-900/40 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary-900/60 transition">
-                            <i class="fas fa-lightbulb text-primary-400 text-2xl"></i>
-                        </div>
-                        <h3 class="text-2xl font-bold text-white mb-4">Innovation</h3>
-                        <p class="text-gray-400">We embrace new technologies and innovative approaches to solve complex business challenges.</p>
-                    </div>
-                    <div class="card-gradient rounded-2xl border border-dark-700 p-6 hover:border-primary-600/50 transition group">
-                        <div class="w-16 h-16 bg-primary-900/40 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary-900/60 transition">
-                            <i class="fas fa-handshake text-primary-400 text-2xl"></i>
-                        </div>
-                        <h3 class="text-2xl font-bold text-white mb-4">Integrity</h3>
-                        <p class="text-gray-400">We operate with transparency, honesty, and ethical practices in all our business dealings.</p>
-                    </div>
-                    <div class="card-gradient rounded-2xl border border-dark-700 p-6 hover:border-primary-600/50 transition group">
-                        <div class="w-16 h-16 bg-primary-900/40 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary-900/60 transition">
-                            <i class="fas fa-star text-primary-400 text-2xl"></i>
-                        </div>
-                        <h3 class="text-2xl font-bold text-white mb-4">Excellence</h3>
-                        <p class="text-gray-400">We strive for excellence in every project, ensuring highest quality standards and client satisfaction.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+                <h1
+                    class="about-title text-5xl font-bold text-white leading-tight mb-4">
 
-        <section class="py-16 bg-gradient-to-r from-primary-900/30 via-dark-950 to-dark-950">
-            <div class="container mx-auto px-6 text-center">
-                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Let's Work Together</h2>
-                <p class="text-xl text-gray-400 mb-7 max-w-2xl mx-auto">Connect with us to discuss how Forin Tech can help transform your business.</p>
-                <a href="/contact.html" class="inline-block bg-gradient-to-r from-primary-600 to-primary-800 text-white px-6 py-2.5 rounded-lg font-medium text-sm hover:shadow-2xl transition-all transform hover:-translate-y-1">
-                    Get In Touch
-                </a>
+                    Building Digital Products
+                    That Drive
+
+                    <span
+                        class="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-blue-500">
+
+                        Real Business Growth
+
+                    </span>
+
+                </h1>
+
+                <!-- Description -->
+
+                <p
+                    class="about-description text-lg text-gray-400 max-w-3xl mx-auto mb-8">
+
+                    Forin Tech is a technology company focused on building
+                    modern websites, SaaS platforms, AI solutions and
+                    scalable digital products that help businesses grow
+                    faster and smarter.
+
+                </p>
+
+                <!-- Stats -->
+
+                <div
+                    class="grid grid-cols-3 gap-8 max-w-2xl mx-auto">
+
+                    <div class="about-stat">
+
+                        <h3
+                            class="text-4xl font-bold text-primary-400 mb-2">
+
+                            50+
+
+                        </h3>
+
+                        <p class="text-gray-400">
+
+                            Projects
+
+                        </p>
+
+                    </div>
+
+                    <div class="about-stat">
+
+                        <h3
+                            class="text-4xl font-bold text-primary-400 mb-2">
+
+                            30+
+
+                        </h3>
+
+                        <p class="text-gray-400">
+
+                            Clients
+
+                        </p>
+
+                    </div>
+
+                    <div class="about-stat">
+
+                        <h3
+                            class="text-4xl font-bold text-primary-400 mb-2">
+
+                            5+
+
+                        </h3>
+
+                        <p class="text-gray-400">
+
+                            Years Experience
+
+                        </p>
+
+                    </div>
+
+                </div>
+
             </div>
-        </section>
-    </main>
+
+        </div>
+
+    </section>
+
+    <!-- Our Story -->
+    <section id="our-story" class="py-24 bg-dark-900">
+
+    <div class="container mx-auto px-6">
+
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+            <!-- Left Side -->
+
+            <div class="story-content">
+
+                <span class="text-primary-400 uppercase tracking-[4px]">
+
+                    WHO WE ARE
+
+                </span>
+
+                <h2 class="text-4xl md:text-5xl font-bold text-white mt-4 mb-6 leading-tight">
+
+                    Building Technology
+                    That Creates Real Impact
+
+                </h2>
+
+                <p class="text-gray-400 text-lg leading-relaxed mb-6">
+
+                    Forin Tech is a technology company focused on helping
+                    startups and businesses turn ideas into scalable digital
+                    products. From websites and SaaS platforms to AI-powered
+                    solutions, we build technology that solves real-world
+                    problems.
+
+                </p>
+
+                <p class="text-gray-400 leading-relaxed">
+
+                    Our approach combines modern technologies, user-focused
+                    design and business strategy to create products that
+                    are fast, reliable and built for long-term growth.
+
+                </p>
+
+            </div>
+
+            <!-- Right Side -->
+
+            <div class="grid sm:grid-cols-2 gap-5">
+
+                <!-- Card 1 -->
+
+                <div
+                    class="p-6 rounded-3xl border border-white/10 bg-white/[0.03]">
+
+                    <i class="fas fa-code text-primary-400 text-3xl mb-5"></i>
+
+                    <h3 class="text-white text-xl font-semibold mb-3">
+
+                        Modern Development
+
+                    </h3>
+
+                    <p class="text-gray-400 text-sm">
+
+                        Building fast, scalable and future-ready digital products.
+
+                    </p>
+
+                </div>
+
+                <!-- Card 2 -->
+
+                <div
+                    class="p-6 rounded-3xl border border-white/10 bg-white/[0.03]">
+
+                    <i class="fas fa-brain text-primary-400 text-3xl mb-5"></i>
+
+                    <h3 class="text-white text-xl font-semibold mb-3">
+
+                        AI Innovation
+
+                    </h3>
+
+                    <p class="text-gray-400 text-sm">
+
+                        Leveraging AI and automation to improve business efficiency.
+
+                    </p>
+
+                </div>
+
+                <!-- Card 3 -->
+
+                <div
+                    class="p-6 rounded-3xl border border-white/10 bg-white/[0.03]">
+
+                    <i class="fas fa-rocket text-primary-400 text-3xl mb-5"></i>
+
+                    <h3 class="text-white text-xl font-semibold mb-3">
+
+                        Startup Focused
+
+                    </h3>
+
+                    <p class="text-gray-400 text-sm">
+
+                        Helping startups launch, grow and scale with confidence.
+
+                    </p>
+
+                </div>
+
+                <!-- Card 4 -->
+
+                <div
+                    class="p-6 rounded-3xl border border-white/10 bg-white/[0.03]">
+
+                    <i class="fas fa-chart-line text-primary-400 text-3xl mb-5"></i>
+
+                    <h3 class="text-white text-xl font-semibold mb-3">
+
+                        Growth Driven
+
+                    </h3>
+
+                    <p class="text-gray-400 text-sm">
+
+                        Delivering solutions designed to create measurable impact.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    </section>
+
+    <!-- Mission & Vision -->
+    <!-- <section id="mission-vision" class="py-24">
+
+        <div class="container mx-auto px-6">
+
+
+            <div class="text-center mb-16">
+
+                <span class="text-primary-400 uppercase tracking-[4px]">
+
+                    OUR PURPOSE
+
+                </span>
+
+                <h2 class="text-4xl md:text-5xl font-bold text-white mt-4 mb-4">
+
+                    Driven By Vision.
+                    Powered By Innovation.
+
+                </h2>
+
+                <p class="text-gray-400 max-w-2xl mx-auto">
+
+                    Every solution we build is guided by a clear mission and a long-term vision
+                    to help businesses thrive in the digital era.
+
+                </p>
+
+            </div>
+
+
+            <div class="grid lg:grid-cols-2 gap-8">
+
+
+                <div
+                    class="mission-card p-10 rounded-[32px] border border-white/10 bg-white/[0.03] hover:border-primary-500/30 transition-all duration-300">
+
+                    <div
+                        class="w-16 h-16 rounded-2xl bg-primary-900/30 flex items-center justify-center mb-6">
+
+                        <i class="fas fa-bullseye text-primary-400 text-2xl"></i>
+
+                    </div>
+
+                    <h3 class="text-3xl font-bold text-white mb-5">
+
+                        Our Mission
+
+                    </h3>
+
+                    <p class="text-gray-400 text-lg leading-relaxed">
+
+                        To empower startups and businesses with innovative digital
+                        solutions that improve efficiency, accelerate growth and
+                        create meaningful impact through technology.
+
+                    </p>
+
+                </div>
+
+
+                <div
+                    class="vision-card p-10 rounded-[32px] border border-white/10 bg-white/[0.03] hover:border-primary-500/30 transition-all duration-300">
+
+                    <div
+                        class="w-16 h-16 rounded-2xl bg-primary-900/30 flex items-center justify-center mb-6">
+
+                        <i class="fas fa-eye text-primary-400 text-2xl"></i>
+
+                    </div>
+
+                    <h3 class="text-3xl font-bold text-white mb-5">
+
+                        Our Vision
+
+                    </h3>
+
+                    <p class="text-gray-400 text-lg leading-relaxed">
+
+                        To become a trusted technology partner for businesses
+                        worldwide by delivering scalable, future-ready and
+                        impactful digital products.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section> -->
+
+    <!-- Founder Spotlight -->
+    <section id="founder" class="py-24">
+
+        <div class="container mx-auto px-6">
+
+            <div class="text-center mb-16">
+
+                <span class="text-primary-400 uppercase tracking-[4px]">
+
+                    LEADERSHIP
+
+                </span>
+
+                <h2 class="text-4xl md:text-5xl font-bold text-white mt-4">
+
+                    Meet The Founder
+
+                </h2>
+
+            </div>
+
+            <div
+                class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+
+                <!-- Image -->
+
+                <div class="founder-image relative">
+
+                    <div
+                        class="overflow-hidden rounded-[32px] border border-white/10">
+
+                        <img
+                            src="data:image/png;base64,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"
+                            alt="Founder"
+                            class="w-full h-full object-cover">
+
+                    </div>
+
+                </div>
+
+                <!-- Content -->
+
+                <div class="founder-content">
+
+                    <span
+                        class="inline-flex items-center px-4 py-2 rounded-full border border-primary-500/30 bg-primary-900/20 mb-6">
+
+                        <span class="text-primary-300 text-sm">
+
+                            Founder & Lead Engineer
+
+                        </span>
+
+                    </span>
+
+                    <h3
+                        class="text-4xl font-bold text-white mb-4">
+
+                        Gurjeet Singh
+
+                    </h3>
+
+                    <p
+                        class="text-gray-400 text-lg leading-relaxed mb-6">
+
+                        With a passion for technology and innovation,
+                        Gurjeet founded Forin Tech with the vision of helping
+                        businesses transform ideas into impactful digital products.
+
+                    </p>
+
+                    <p
+                        class="text-gray-400 leading-relaxed mb-8">
+
+                        Over the years, he has worked on websites,
+                        SaaS platforms, automation systems and AI-powered
+                        applications, helping startups and businesses
+                        launch, scale and grow through technology.
+
+                    </p>
+
+                    <!-- Highlights -->
+
+                    <div
+                        class="grid sm:grid-cols-2 gap-4 mb-8">
+
+                        <div
+                            class="p-4 rounded-2xl border border-white/10 bg-white/[0.03]">
+
+                            <h4
+                                class="text-primary-400 text-2xl font-bold">
+
+                                50+
+
+                            </h4>
+
+                            <p class="text-gray-400 text-sm">
+
+                                Projects Delivered
+
+                            </p>
+
+                        </div>
+
+                        <div
+                            class="p-4 rounded-2xl border border-white/10 bg-white/[0.03]">
+
+                            <h4
+                                class="text-primary-400 text-2xl font-bold">
+
+                                5+
+
+                            </h4>
+
+                            <p class="text-gray-400 text-sm">
+
+                                Years Experience
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Button -->
+
+                    <a href="#contact"
+                        class="inline-flex items-center px-6 py-4 rounded-xl bg-gradient-to-r from-primary-600 to-primary-800 text-white font-medium">
+
+                        Connect With Us
+
+                        <i
+                            class="fas fa-arrow-right ml-3">
+                        </i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Core Values -->
+    <section id="values" class="py-24 bg-dark-900">
+
+        <div class="container mx-auto px-6">
+
+            <!-- Heading -->
+
+            <div class="text-center mb-16">
+
+                <span class="text-primary-400 uppercase tracking-[4px]">
+
+                    OUR VALUES
+
+                </span>
+
+                <h2 class="text-4xl md:text-5xl font-bold text-white mt-4 mb-4">
+
+                    The Principles That
+                    Guide Everything We Build
+
+                </h2>
+
+                <p class="text-gray-400 max-w-2xl mx-auto">
+
+                    Our values shape the way we work, collaborate and
+                    deliver technology solutions for businesses worldwide.
+
+                </p>
+
+            </div>
+
+            <!-- Cards -->
+
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <!-- Innovation -->
+
+                <div
+                    class="value-card p-8 rounded-[32px] border border-white/10 bg-white/[0.03] hover:border-primary-500/30 transition-all duration-300">
+
+                    <div
+                        class="w-16 h-16 rounded-2xl bg-primary-900/30 flex items-center justify-center mb-6">
+
+                        <i class="fas fa-lightbulb text-primary-400 text-2xl"></i>
+
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-white mb-4">
+
+                        Innovation
+
+                    </h3>
+
+                    <p class="text-gray-400 leading-relaxed">
+
+                        We embrace new technologies, creative thinking and
+                        continuous learning to build modern digital solutions.
+
+                    </p>
+
+                </div>
+
+                <!-- Integrity -->
+
+                <div
+                    class="value-card p-8 rounded-[32px] border border-white/10 bg-white/[0.03] hover:border-primary-500/30 transition-all duration-300">
+
+                    <div
+                        class="w-16 h-16 rounded-2xl bg-primary-900/30 flex items-center justify-center mb-6">
+
+                        <i class="fas fa-handshake text-primary-400 text-2xl"></i>
+
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-white mb-4">
+
+                        Integrity
+
+                    </h3>
+
+                    <p class="text-gray-400 leading-relaxed">
+
+                        We believe in transparency, honesty and long-term
+                        relationships built on trust and accountability.
+
+                    </p>
+
+                </div>
+
+                <!-- Excellence -->
+
+                <div
+                    class="value-card p-8 rounded-[32px] border border-white/10 bg-white/[0.03] hover:border-primary-500/30 transition-all duration-300">
+
+                    <div
+                        class="w-16 h-16 rounded-2xl bg-primary-900/30 flex items-center justify-center mb-6">
+
+                        <i class="fas fa-award text-primary-400 text-2xl"></i>
+
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-white mb-4">
+
+                        Excellence
+
+                    </h3>
+
+                    <p class="text-gray-400 leading-relaxed">
+
+                        We strive to deliver exceptional quality, performance
+                        and value in every project we undertake.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Tech Stack Section -->
+    <div id="tech-stack-container"></div>
+
+    <!-- CTA Section -->
+    <div id="cta-container"></div>
 
     <!-- Include Footer -->
     <div id="footer"></div>
-    <script>
-        fetch('/includes/footer.html')
-            .then(response => response.text())
-            .then(data => document.getElementById('footer').innerHTML = data);
-    </script>
-        <!-- JavaScript for Interactivity -->
-    <script>
-        // Mobile menu toggle
-        document.getElementById('mobile-menu-button').addEventListener('click', function() {
-            const mobileMenu = document.getElementById('mobile-menu');
-            mobileMenu.classList.toggle('hidden');
-            
-            // Change icon
-            const icon = this.querySelector('i');
-            if (icon.classList.contains('fa-bars')) {
-                icon.classList.remove('fa-bars');
-                icon.classList.add('fa-times');
-            } else {
-                icon.classList.remove('fa-times');
-                icon.classList.add('fa-bars');
-            }
-        });
 
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                if(targetId === '#') return;
-                
-                const targetElement = document.querySelector(targetId);
-                if(targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                    
-                    // Close mobile menu if open
-                    const mobileMenu = document.getElementById('mobile-menu');
-                    if (!mobileMenu.classList.contains('hidden')) {
-                        mobileMenu.classList.add('hidden');
-                        const menuButton = document.getElementById('mobile-menu-button');
-                        const icon = menuButton.querySelector('i');
-                        icon.classList.remove('fa-times');
-                        icon.classList.add('fa-bars');
-                    }
-                }
-            });
-        });
 
-        // Navbar background on scroll
-        window.addEventListener('scroll', function() {
-            const nav = document.querySelector('nav');
-            if (window.scrollY > 50) {
-                nav.classList.add('bg-dark-900/95', 'shadow-xl');
-            } else {
-                nav.classList.remove('bg-dark-900/95', 'shadow-xl');
-            }
-        });
+    <!-- Lenis -->
+    <script src="https://unpkg.com/lenis@1.1.16/dist/lenis.min.js"></script>
 
-        // Initialize navbar background
-        if (window.scrollY > 50) {
-            document.querySelector('nav').classList.add('bg-dark-900/95', 'shadow-xl');
-        }
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 
-        // Card hover animations
-        document.querySelectorAll('.group').forEach(card => {
-            card.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateY(-8px)';
-            });
-            
-            card.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(0)';
-            });
-        });
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <script src="./js/lenis.js"></script>
+    <script src="./js/navbarAnimation.js"></script>
+    <script src="./js/navbarFunctionality.js"></script>
+    <script src="./js/tech-stack.js"></script>
+    <script src="./js/techStackFunctionality.js"></script>
+    <script src="./js/cta.js"></script>
+    <script src="./js/ctaFunctionality.js"></script>
+    <script src="./js/footer.js"></script>
+    <script src="./js/footerFunctionality.js"></script>
+    <script src="./js/aboutPageAnimations.js"></script>
+    <script src="./js/main.js"></script>
     </script>
 </body>
 </html>
