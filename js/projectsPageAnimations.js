@@ -1,41 +1,89 @@
 window.initProjectsPageAnimations = function () {
 
-    // HERO TIMELINE
-    const heroTl = gsap.timeline();
+    // HERO
+    const tl = gsap.timeline();
 
-    heroTl
-
-    .from(".projects-badge", {
+    tl.from(".projects-badge", {
         opacity: 0,
-        y: 20,
-        duration: 0.5
+        y: 15,
+        duration: 0.4
     })
 
     .from(".projects-title", {
         opacity: 0,
-        y: 60,
-        duration: 0.9,
-        ease: "power3.out"
+        y: 25,
+        duration: 0.7
     }, "-=0.2")
 
     .from(".projects-description", {
         opacity: 0,
-        y: 30,
-        duration: 0.6
-    }, "-=0.5")
+        y: 15,
+        duration: 0.5
+    }, "-=0.4")
 
     .from(".projects-stat", {
         opacity: 0,
-        y: 20,
-        stagger: 0.12,
+        y: 10,
+        stagger: 0.08,
         duration: 0.4
-    }, "-=0.3");
+    }, "-=0.2");
+
+
+    // PROJECT CARDS
+    gsap.utils.toArray(".project-card").forEach(card => {
+
+        gsap.from(card, {
+            scrollTrigger: {
+                trigger: card,
+                start: "top 88%"
+            },
+            opacity: 0,
+            y: 15,
+            duration: 0.5,
+            ease: "power2.out"
+        });
+
+    });
+
+
+    // PROCESS CARDS
+    gsap.utils.toArray(".process-card").forEach(card => {
+
+        gsap.from(card, {
+            scrollTrigger: {
+                trigger: card,
+                start: "top 88%"
+            },
+            opacity: 0,
+            y: 15,
+            duration: 0.5,
+            ease: "power2.out"
+        });
+
+    });
+
+
+    // WHY US CARDS
+    gsap.utils.toArray(".why-card").forEach(card => {
+
+        gsap.from(card, {
+            scrollTrigger: {
+                trigger: card,
+                start: "top 88%"
+            },
+            opacity: 0,
+            y: 15,
+            duration: 0.5,
+            ease: "power2.out"
+        });
+
+    });
 
 
     // FLOATING BLOBS
     gsap.to(".hero-blob-1", {
-        x: 40,
-        y: -30,
+        x: 20,
+        y: -15,
         duration: 8,
         repeat: -1,
         yoyo: true,
@@ -43,54 +91,12 @@ window.initProjectsPageAnimations = function () {
     });
 
     gsap.to(".hero-blob-2", {
-        x: -40,
-        y: 30,
+        x: -20,
+        y: 15,
         duration: 10,
         repeat: -1,
         yoyo: true,
         ease: "sine.inOut"
-    });
-
-
-    // PROJECT CARDS
-    gsap.from(".project-card", {
-        scrollTrigger: {
-            trigger: "#projects",
-            start: "top 75%"
-        },
-        opacity: 0,
-        y: 80,
-        stagger: 0.15,
-        duration: 0.8,
-        ease: "power3.out"
-    });
-
-
-    // PROCESS CARDS
-    gsap.from(".process-card", {
-        scrollTrigger: {
-            trigger: "#process",
-            start: "top 80%"
-        },
-        opacity: 0,
-        y: 60,
-        stagger: 0.15,
-        duration: 0.7,
-        ease: "power3.out"
-    });
-
-
-    // WHY US CARDS
-    gsap.from(".why-card", {
-        scrollTrigger: {
-            trigger: "#why-us",
-            start: "top 80%"
-        },
-        opacity: 0,
-        scale: 0.9,
-        stagger: 0.15,
-        duration: 0.7,
-        ease: "back.out(1.5)"
     });
 
 
@@ -100,7 +106,7 @@ window.initProjectsPageAnimations = function () {
         card.addEventListener("mouseenter", () => {
 
             gsap.to(card, {
-                y: -10,
+                y: -8,
                 duration: 0.3,
                 ease: "power2.out"
             });
@@ -127,7 +133,8 @@ window.initProjectsPageAnimations = function () {
 
             gsap.to(card, {
                 y: -8,
-                duration: 0.3
+                duration: 0.3,
+                ease: "power2.out"
             });
 
         });
@@ -136,7 +143,8 @@ window.initProjectsPageAnimations = function () {
 
             gsap.to(card, {
                 y: 0,
-                duration: 0.3
+                duration: 0.3,
+                ease: "power2.out"
             });
 
         });
@@ -151,7 +159,8 @@ window.initProjectsPageAnimations = function () {
 
             gsap.to(card, {
                 y: -8,
-                duration: 0.3
+                duration: 0.3,
+                ease: "power2.out"
             });
 
         });
@@ -160,7 +169,8 @@ window.initProjectsPageAnimations = function () {
 
             gsap.to(card, {
                 y: 0,
-                duration: 0.3
+                duration: 0.3,
+                ease: "power2.out"
             });
 
         });

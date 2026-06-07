@@ -48,19 +48,10 @@ window.initContactForm = function () {
 
             subject: subject || `New Inquiry from ${name}`,
 
-            message: `
-                Name: ${name}
+            message: message,
 
-                Email: ${email}
-
-                Phone: ${phone}
-
-                Message:
-                ${message}
-            `,
-
-            company: "",
-            website: ""
+            // company: "",
+            // website: ""
 
         };
 

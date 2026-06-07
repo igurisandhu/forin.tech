@@ -41,4 +41,12 @@ window.addEventListener("load", () => {
         initContactForm();
     }
 
+    if (typeof initPrivacyPolicyAnimations === "function") {
+        initPrivacyPolicyAnimations();
+    }
+
+    if (typeof initTermsPageAnimations === "function") {
+        initTermsPageAnimations();
+    }
+
 });
