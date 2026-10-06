@@ -6,22 +6,19 @@
 <!-- SEO: title & description kept keyword-identical to the live site so rankings carry over -->
 <title>شركة تنظيف بجدة عمالة فلبينية | خصم 45% | سوبر كلين</title>
 <meta name="description" content="سوبر كلين – شركة تنظيف بجدة والرياض: تنظيف شقق وفلل وكنب وسجاد وخزانات ومسابح بعمالة مصرية وفلبينية. خصم 45% بكود SUPER45، الدفع بعد التنظيف وضمان 7 أيام.">
-<link rel="canonical" href="https://super-ksa.com/">
-<link rel="alternate" hreflang="ar-SA" href="https://super-ksa.com/">
-<link rel="alternate" hreflang="x-default" href="https://super-ksa.com/">
+<!-- DEMO COPY: hidden from search engines so it never competes with the client's live site. Remove this tag (and restore canonical/hreflang to the final domain) at launch. -->
+<meta name="robots" content="noindex, nofollow">
 <meta name="theme-color" content="#073B3A">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ar_SA">
 <meta property="og:title" content="سوبر كلين | شركة تنظيف بجدة والرياض – خصم 45%">
 <meta property="og:description" content="تنظيف احترافي بنظام الحماية الرباعي. الدفع بعد التنظيف + ضمان 7 أيام.">
-<meta property="og:url" content="https://super-ksa.com/">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23073B3A'/%3E%3Cpath d='M32 10l5 15 15 5-15 5-5 15-5-15-15-5 15-5z' fill='%23fff'/%3E%3C/svg%3E">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&family=Readex+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://images.unsplash.com">
 
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
@@ -209,9 +206,9 @@ h1,h2,h3,.font-display{font-family:'Readex Pro','IBM Plex Sans Arabic',sans-seri
     <!-- hero before/after -->
     <div class="lg:col-span-7 hero-in relative">
       <div class="ba aspect-[6/5] rounded-[28px] shadow-[0_40px_80px_-35px_rgba(7,59,58,.55)] w-full lg:mx-auto lg:w-[min(100%,calc((100svh-200px)*1.2))]" data-ba dir="ltr">
-        <img src="https://images.unsplash.com/photo-1659976733536-dfa71f6015d7?auto=format&fit=crop&w=1400&q=80" alt="كنب بعد التنظيف" fetchpriority="high" class="after-img">
+        <img src="assets/img/hero-sofa.jpg" alt="كنب بعد التنظيف" fetchpriority="high" class="after-img">
         <div class="ba-before">
-          <img src="https://images.unsplash.com/photo-1659976733536-dfa71f6015d7?auto=format&fit=crop&w=1400&q=80" alt="كنب قبل التنظيف">
+          <img src="assets/img/hero-sofa.jpg" alt="كنب قبل التنظيف">
           <div class="ba-soil soil-a"></div><div class="ba-grime"></div>
         </div>
         <span class="ba-tag bg-ink text-white left-4" data-en="BEFORE">قبل</span>
@@ -277,9 +274,9 @@ h1,h2,h3,.font-display{font-family:'Readex Pro','IBM Plex Sans Arabic',sans-seri
     </div>
     <div class="lg:col-span-7 reveal">
       <div id="ba2" class="ba aspect-[16/11] rounded-[28px] shadow-[0_40px_80px_-35px_rgba(7,59,58,.5)]" data-ba dir="ltr">
-        <img id="ba2a" class="after-img" src="https://images.unsplash.com/photo-1664995156397-99bd42f5a8ab?auto=format&fit=crop&w=1600&q=80" alt="زاوية غرفة بعد التنظيف" loading="lazy" width="1600" height="1100">
+        <img id="ba2a" class="after-img" src="assets/img/room-corner.jpg" alt="زاوية غرفة بعد التنظيف" loading="lazy" width="1600" height="1100">
         <div class="ba-before">
-          <img id="ba2b" src="https://images.unsplash.com/photo-1664995156397-99bd42f5a8ab?auto=format&fit=crop&w=1600&q=80" alt="زاوية غرفة قبل التنظيف" loading="lazy" width="1600" height="1100">
+          <img id="ba2b" src="assets/img/room-corner.jpg" alt="زاوية غرفة قبل التنظيف" loading="lazy" width="1600" height="1100">
           <div class="ba-soil soil-corner"></div>
         </div>
         <span class="ba-tag bg-ink text-white left-4" data-en="BEFORE">قبل</span>
@@ -536,7 +533,7 @@ let lang = 'ar';
 const t = (ar, en) => lang === 'ar' ? ar : en;
 
 /* ---------- DATA ---------- */
-const IMG = id => `https://images.unsplash.com/${id}?auto=format&fit=crop&w=640&h=440&q=70`;
+const IMG = id => `assets/img/svc-${id}.jpg`;
 const SERVICES = [
   { i:'building-2', img:'photo-1628592102751-ba83b0314276', c:['jeddah','riyadh'], ar:'تنظيف شقق', en:'Apartment cleaning' },
   { i:'home', img:'photo-1706808849780-7a04fbac83ef', c:['jeddah','riyadh'], ar:'تنظيف فلل', en:'Villa cleaning' },
@@ -647,7 +644,7 @@ function setProt(i, force){
   $('#pcount').textContent = `0${i+1} / 04`;
   const v = $('#pvis');
   if (!v.children.length || force) {
-    v.innerHTML = PROT.map((p, k) => `<img src="https://images.unsplash.com/${p.ph}?auto=format&fit=crop&w=800&h=800&q=75" alt="${p.ar}" width="800" height="800" loading="${k===0?'eager':'lazy'}" class="absolute inset-0 w-full h-full object-cover" style="opacity:${k===i?1:0}">`).join('')
+    v.innerHTML = PROT.map((p, k) => `<img src="assets/img/prot-${p.ph}.jpg" alt="${p.ar}" width="800" height="800" loading="${k===0?'eager':'lazy'}" class="absolute inset-0 w-full h-full object-cover" style="opacity:${k===i?1:0}">`).join('')
       + `<div class="absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/10 to-transparent pointer-events-none"></div>`
       + `<div id="plabel" class="absolute inset-x-0 bottom-[9%] flex justify-center pointer-events-none"></div>`;
   }
